@@ -1,10 +1,10 @@
-package PrideMC.SurvivalCore.tasks;
+package pride.survivalcore.tasks;
 
 import cn.nukkit.scheduler.PluginTask;
 import cn.nukkit.Server;
 import cn.nukkit.utils.TextFormat;
 
-import PrideMC.Network.SurvivalCore.Main;
+import pride.survivalcore.main;
 
 import java.util.Random;
 

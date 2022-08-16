@@ -4,9 +4,9 @@ import cn.nukkit.plugin.PluginBase;
 import cn.nukkit.utils.TextFormat;
 import cn.nukkit.utils.Config;
 
-import PrideMC.SurvivalCore.EventListener;
-import PrideMC.SurvivalCore.tasks.BroadcastTask;
-import PrideMC.SurvivalCore.tasks.MotdTask;
+import pride.survivalcore.EventListener;
+import pride.survivalcore.tasks.BroadcastTask;
+import pride.survivalcore.tasks.MotdTask;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package PrideMC.SurvivalCore;
+package pride.survivalcore;
 
 import cn.nukkit.event.Listener;
 import cn.nukkit.event.player.PlayerJoinEvent;
@@ -10,15 +10,15 @@ import cn.nukkit.event.entity.EntityDamageEvent;
 import cn.nukkit.Server;
 import cn.nukkit.Player;
 
-import PrideMC.SurvivalCore.Main;
+import pride.survivalcore.main;
 
 public class EventListener implements Listener{
      
-     private Main plugin;
-     
-     public EventListener(Main plugin){
-          this.plugin = plugin;
-     }
+    private final Main plugin;
+
+    public EventListener(Main plugin) {
+        this.plugin = plugin;
+    }
      
      public void onJoin(PlayerJoinEvent event){
           event.setJoinMessage("");
