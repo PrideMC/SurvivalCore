@@ -1,12 +1,12 @@
-package PrideMC.SurvivalCore.tasks.BroadcastTask;
+package pride.survivalcore.tasks;
 
-import cn.nukkit.scheduler.Task;
+import cn.nukkit.scheduler.PluginTask;
 import cn.nukkit.Server;
 import cn.nukkit.utils.TextFormat;
 
 import java.util.Random;
 
-public class BroadcastTask extends Task {
+public class BroadcastTask extends PluginTask<Main> {
      
      public BroadcastTask(Main plugin) {
         super(plugin);

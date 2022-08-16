@@ -1,4 +1,4 @@
-package PrideMC.SurvivalCore;
+package pride.survivalcore;
 
 import cn.nukkit.plugin.PluginBase;
 import cn.nukkit.utils.TextFormat;
@@ -13,6 +13,8 @@ import java.io.IOException;
 
 public class Main extends PluginBase {
      
+     private String title = TextFormat.YELLOW + "PrideMC Network";
+     
      
      @Override
      public void onLoad(){
@@ -22,8 +24,10 @@ public class Main extends PluginBase {
      @Override
      public void onEnable(){
           this.getScheduler().scheduleRepeatingTask(new BroadcastTask(this), 20*60);
-          //this.getScheduler().scheduleRepeatingTask(new MotdTask(this), 20*60);
+          this.getScheduler().scheduleRepeatingTask(new MotdTask(this), 20*60);
           
           this.getServer().getPluginManager().registerEvents(new EventListener(this), this);
+          
+          this.getServer().getNetwork().setSubName(this.title);
      }
 }
