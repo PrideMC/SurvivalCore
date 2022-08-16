@@ -10,7 +10,7 @@ import cn.nukkit.event.entity.EntityDamageEvent;
 import cn.nukkit.Server;
 import cn.nukkit.Player;
 
-import pride.survivalcore.main;
+import pride.survivalcore.Main;
 
 public class EventListener implements Listener{
      

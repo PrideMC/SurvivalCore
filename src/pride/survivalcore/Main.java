@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class Main extends PluginBase {
      
-     private String title = TextFormat.YELLOW + "PrideMC Network";
+     private String title = TextFormat.YELLOW + "PrideMC Network" + TextFormat.RESET;
      
      
      @Override
@@ -23,8 +23,8 @@ public class Main extends PluginBase {
      
      @Override
      public void onEnable(){
-          this.getScheduler().scheduleRepeatingTask(new BroadcastTask(this), 20*60);
-          this.getScheduler().scheduleRepeatingTask(new MotdTask(this), 20*60);
+          this.getServer().getScheduler().scheduleRepeatingTask(new BroadcastTask(this), 20*60);
+          this.getServer().getScheduler().scheduleRepeatingTask(new MotdTask(this), 20*60);
           
           this.getServer().getPluginManager().registerEvents(new EventListener(this), this);
           
