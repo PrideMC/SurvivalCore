@@ -1,1 +1,1 @@
-# Survival Core
+# Survival Core (Discontinued)
